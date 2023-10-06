@@ -3,6 +3,7 @@ import random
 
 #Tic-Tac-Toe (Cờ caro)
 
+
 def next_turn(row, column):
 
     global player
