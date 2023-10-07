@@ -19,7 +19,7 @@ def next_turn(row, column):
                 label.config(text=(players[1]+"'s turn"))
 
             elif check_winner() is True:
-                label.config(text=(players[0]+" wins"))
+                label.config(text=("Player "+players[0]+" is gay"))
 
             elif check_winner() == "Tie":
                 label.config(text="Tie!")
@@ -33,7 +33,7 @@ def next_turn(row, column):
                 label.config(text=(players[0]+"'s turn"))
 
             elif check_winner() is True:
-                label.config(text=(players[1]+" wins"))
+                label.config(text=("Player "+players[0]+" is gay"))
 
             elif check_winner() == "Tie":
                 label.config(text="Tie!")
@@ -105,7 +105,7 @@ def new_game():
 
 
 window = Tk()
-window.title("Tic-Tac-Toe")
+window.title("This is just a normal Tic Tac Toe game!")
 players = ["x","o"]
 player = random.choice(players)
 buttons = [[0,0,0],
